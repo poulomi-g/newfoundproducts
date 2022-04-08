@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+.desktopnavContainer a {
+  padding-left: 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.76);
+  transition: 0.3s;
+}
+
+.desktopnavContainer a:last-child{
+  padding-right: 32px;
+}
+
+.desktopNav a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: rgb(13,31,81);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 160px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.822);
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.sidenav .closebtn {
+  padding:0px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.desktopnavContainer {
+  overflow: hidden;
+}
+
+.desktopNav{
+  float:right;
+}
+
+.burger {
+  display:none;
+}
+
+.desktopnavContainer {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+
+.fullwidthNav {
+  background-color: rgb(13,31,81);
+  padding: 30px 0px;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    float:right;
+    margin:0 20px;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
