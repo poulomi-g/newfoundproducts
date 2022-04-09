@@ -354,3 +354,12 @@ p2 {
   text-align: center;
   margin-top:40px;
 }
+
+.SectionButton {
+  display: block;
+  width: fit-content;
+  max-width: 1108px;
+  margin: 20px auto;
+  padding: 25px 24px;
+  
+}
