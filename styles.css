@@ -156,11 +156,12 @@ h3 {
 
 @media screen and (max-width: 600px) {
     .HeroText {
-        padding-top: 20px;
+        padding-top: 40px;
     }
 }
 
 .button {
+    margin: 30px 0;
     cursor: pointer;
     background-color: #547be8;
     padding: 20px;
@@ -201,7 +202,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     max-width: 1108px;
     margin: 0px auto;
     padding: 0px 24px;
@@ -249,4 +249,108 @@ h3 {
     .founderstory {
         display: block;
     }
+}
+
+.slider-wrapper {
+  width:100%;
+  overflow: hidden;
+  padding: 25px 20px 20px;
+  white-space: wrap;
+  max-width: 1108px;
+  margin: 20px auto;
+  padding: 25px 24px;
+
+}
+
+h4 {
+  text-align: center;
+}
+
+p2 {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.prev {
+  color: rgba(149, 157, 165, 0.5);
+  position: absolute;
+  top: 45%;
+  left: -10px;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.prev:hover{
+  cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+.next {
+  color: rgba(149, 157, 165, 0.5);
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+.next:hover {
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.prev2 {
+  color: rgba(149, 157, 165, 0.5);
+  position: absolute;
+  top: 45%;
+  left: -10px;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.prev2:hover{
+  cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+.next2 {
+  color: rgba(149, 157, 165, 0.5);
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+.next2:hover {
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.fact {
+  vertical-align: top;
+  display: inline-block;
+  height: auto;
+  width: 200px;
+  background-color: white;
+  padding: 20px;
+  margin: 0px 25px 0px 5px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.fact > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-bottom: 5px;
+}
+
+.SectionHeader {
+  text-align: center;
+  margin-top:40px;
 }
