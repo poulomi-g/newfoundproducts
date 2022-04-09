@@ -1,100 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Montserrat&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 80px;
+    margin: 20px 0px;
+    line-height: 1;
+}
+
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #0d1f51;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #0d1f51;
 }
 
 .desktopnavContainer a {
-  padding-left: 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.76);
-  transition: 0.3s;
+    padding-left: 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.76);
+    transition: 0.3s;
 }
 
-.desktopnavContainer a:last-child{
-  padding-right: 32px;
+.desktopnavContainer a:last-child {
+    padding-right: 32px;
 }
 
-.desktopNav a:hover{
-  color: rgb(255, 255, 255);
+.desktopNav a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  background-color: rgb(13,31,81);
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 160px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: rgb(13, 31, 81);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 160px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.822);
-  display: block;
-  transition: 0.3s;
-  text-align: center;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.822);
+    display: block;
+    transition: 0.3s;
+    text-align: center;
 }
 
 .sidenav a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .sidenav .closebtn {
-  padding:0px;
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  font-size: 40px;
-  margin-left: 50px;
+    padding: 0px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 40px;
+    margin-left: 50px;
 }
 
 .desktopnavContainer {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-.desktopNav{
-  float:right;
+.desktopNav {
+    float: right;
 }
 
 .burger {
-  display:none;
+    display: none;
 }
 
 .desktopnavContainer {
-  max-width: 1168px;
-  margin: 0 auto;
+    max-width: 1168px;
+    margin: 0 auto;
 }
 
 .fullwidthNav {
-  background-color: rgb(13,31,81);
-  padding: 30px 0px;
-  position: fixed;
-  top:0;
-  width: 100%;
+    background-color: rgb(13, 31, 81);
+    padding: 30px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 700px) {
-  .burger {
-    display: block;
-    float:right;
-    margin:0 20px;
-  }
+    .burger {
+        display: block;
+        float: right;
+        margin: 0 20px;
+    }
 
-  .desktopNav {
-    display: none;
-  }
+    .desktopNav {
+        display: none;
+    }
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.HeroSection {
+    margin-top: 84px;
+    background-image: url("assets/herosection.png");
+    background-size: cover;
+    height: 700px;
+}
+
+.HeroText {
+    display: block;
+    max-width: 1108px;
+    margin: 0px auto;
+    padding: 84px 24px;
+}
+
+.HeroText > h1 {
+    color: #fff;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.HeroText > h3 {
+    color: #fff;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 650px) {
+    .HeroText h3 {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .HeroText {
+        padding-top: 20px;
+    }
+}
+
+.button {
+    cursor: pointer;
+    background-color: #547be8;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    transition: 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.button:hover {
+    background-color: rgb(13, 31, 81);
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.SectionContainer {
+    max-width: 1108px;
+    margin: 0px auto;
+    padding: 84px 24px;
+}
+
+.LeftAlignedImg {
+    max-width: 600px;
+    display: block;
+    width: 40%;
+    background-image: url("assets/whychooseus.png");
+}
+
+.ambassadorIcons {
+    width: 80px;
+    height: 80px;
+}
+
+.founderstory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: 1108px;
+    margin: 0px auto;
+    padding: 0px 24px;
+}
+
+.founderstoryImgMobile {
+    display: none;
+}
+
+.founderstoryImg {
+    display: block;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 1094px) {
+    .founderstoryImg2 {
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    .founderstoryImgMobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .founderstoryImg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1094px) {
+    .parent {
+        display: block;
+    }
+    .ambassadorIcons {
+        margin-top: 30px;
+    }
+
+    .founderstory {
+        display: block;
+    }
 }
