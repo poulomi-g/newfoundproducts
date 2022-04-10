@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
         />
+    
         <link rel="stylesheet" href="styles.css" />
     </head>
 
@@ -20,7 +21,7 @@
                     <div class="desktopNav">
                         <a href="/newfoundproducts">Home</a>
                         <a href="/newfoundproducts/about.html">About</a>
-                        <a href="/newfoundproducts/contact.html">Contact</a>
+                        <a href="/newfoundproducts/contact.html" class = "active">Contact</a>
                         <a href="/newfoundproducts/products.html">Products and Brands</a>
                         
                     </div>
@@ -40,10 +41,11 @@
                     onclick="closeNav()"
                     >&times;</a
                 >
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                
+                <a href="/newfoundproducts">Home</a>
+                        <a href="/newfoundproducts/about.html">About</a>
+                        <a href="/newfoundproducts/contact.html" class = "active">Contact</a>
+                        <a href="/newfoundproducts/products.html">Products and Brands</a>
             </div>
 
             <script>
@@ -191,7 +193,7 @@
                             },
                         },
                         {
-                            breakpoint: 600,
+                            breakpoint: 800,
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
@@ -211,7 +213,7 @@
 
         <!-- Categories -->
         <section>
-            <div class="SectionHeader"><h2>Categories</h2></div>
+            <div class="SectionHeader"><h2>Featured Categories</h2></div>
             <div class="slider-wrapper">
                 <div class="slider">
                     <div class="col-md-12 heroSlider-fixed">
@@ -301,7 +303,7 @@
                             },
                         },
                         {
-                            breakpoint: 600,
+                            breakpoint: 800,
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
@@ -329,6 +331,35 @@
             </div>
         </section>
 
+        <!-- Footer -->
+        <section>
+          <div class="footer">
+              <div class="footerContainer">
+                <div class="LogoAddress">
+                <h2>
+                    ABC Wholesale
+                </h2>
+                <p>
+                    4374 Sixth Street<br/>
+                    New Westminster<br/>
+                    British Columbia<br/>
+                    V3L 3C1<br/>
+                    Canada <br/>
+                    <br/>
+                    (604) 357 4284<br/>
+                    email@gmail.com<br/>
+                </p>
+                </div>
+                <div class = "BottomNav">
+                <h4>Sitemap</h4>
+                <a href="/newfoundproducts">Home</a><br/>
+                <a href="/newfoundproducts/about.html">About</a><br/>
+                <a href="/newfoundproducts/contact.html">Contact</a><br/>
+                <a href="/newfoundproducts/products.html">Products and Brands</a><br/>
+                </div>
+              </div>
+          </div>
+        </section>
         
     </body>
 </html>

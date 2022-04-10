@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
         />
+    
         <link rel="stylesheet" href="styles.css" />
     </head>
 
@@ -19,7 +20,7 @@
                     <a href="#" style="float: left">LOGO</a>
                     <div class="desktopNav">
                         <a href="/newfoundproducts">Home</a>
-                        <a href="/newfoundproducts/about.html">About</a>
+                        <a href="/newfoundproducts/about.html" class = "active">About</a>
                         <a href="/newfoundproducts/contact.html">Contact</a>
                         <a href="/newfoundproducts/products.html">Products and Brands</a>
                         
@@ -40,10 +41,11 @@
                     onclick="closeNav()"
                     >&times;</a
                 >
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                
+                <a href="/newfoundproducts">Home</a>
+                        <a href="/newfoundproducts/about.html" class = "active">About</a>
+                        <a href="/newfoundproducts/contact.html">Contact</a>
+                        <a href="/newfoundproducts/products.html">Products and Brands</a>
             </div>
 
             <script>
@@ -57,21 +59,13 @@
             </script>
         </section>
 
-        <!-- Hero Section -->
-        <section class="HeroSection">
-            <div class="HeroText">
-                <h1>ABC Wholesale</h1>
-                <h3>Canada's best source for brand name products</h3>
-                <a style="text-decoration:none;">
-                    <div class="button">Learn More</div>
-                </a>
-            </div>
-        </section>
-
         <!-- Why Us Section -->
-        <section class="WhyUsSection">
+        <section class="WhyUsSection" style = "margin-top: 40px;">
             <div class="SectionContainer">
-                <div class="founderstory">
+                <h2 class="SectionHeader">
+                    Our Story
+                </h2>
+                <div class="founderstory" style = "margin-top: 40px;">
                     <img class="founderstoryImg" src="assets/whychooseus.png" />
                     <div
                         style="
@@ -82,9 +76,6 @@
                             line-height: 35px;
                         "
                     >
-                        <h2 style="text-align: left; margin: 10px 0 10px 0">
-                            Why Choose Us?
-                        </h2>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -101,7 +92,7 @@
 
         <!-- Our Brands -->
         <section>
-            <div class="SectionHeader"><h2>Our Brands</h2></div>
+            <div class="SectionHeader"><h2>Industries Served</h2></div>
             <div class="slider-wrapper">
                 <div class="slider">
                     <div class="col-md-12 heroSlider-fixed">
@@ -139,21 +130,6 @@
                                     <h4>TITLE #4</h4>
                                 </div>
 
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #5</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #6</h4>
-                                </div>
                             </div>
 
                             <div class="prev">
@@ -191,7 +167,7 @@
                             },
                         },
                         {
-                            breakpoint: 600,
+                            breakpoint: 800,
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
@@ -209,126 +185,36 @@
             </script>
         </section>
 
-        <!-- Categories -->
+
+        <!-- Footer -->
         <section>
-            <div class="SectionHeader"><h2>Categories</h2></div>
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <div class="col-md-12 heroSlider-fixed">
-                        <div class="overlay">
-                            <div class="slider responsive2">
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #1</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #2</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #3</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #4</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #5</h4>
-                                </div>
-
-                                <div class="fact">
-                                    <img
-                                        src="https://img.icons8.com/wired/64/000000/manufacturing.png"
-                                        alt=""
-                                    />
-                                    <h4>TITLE #6</h4>
-                                </div>
-                            </div>
-
-                            <div class="prev2">
-                                <span
-                                    class="glyphicon glyphicon-triangle-left"
-                                    aria-hidden="true"
-                                ></span>
-                            </div>
-                            <div class="next2">
-                                <span
-                                    class="glyphicon glyphicon-triangle-right"
-                                    aria-hidden="true"
-                                ></span>
-                            </div>
-                        </div>
-                    </div>
+          <div class="footer">
+              <div class="footerContainer">
+                <div class="LogoAddress">
+                <h2>
+                    ABC Wholesale
+                </h2>
+                <p>
+                    4374 Sixth Street<br/>
+                    New Westminster<br/>
+                    British Columbia<br/>
+                    V3L 3C1<br/>
+                    Canada <br/>
+                    <br/>
+                    (604) 357 4284<br/>
+                    email@gmail.com<br/>
+                </p>
                 </div>
-            </div>
-
-            <script>
-                $(".responsive2").slick({
-                    prevArrow: $(".prev2"),
-                    nextArrow: $(".next2"),
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3,
-                                infinite: false,
-                            },
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 2,
-                            },
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                            },
-                        },
-                    ],
-                });
-            </script>
-
-            <div style="display: block;
-            width: fit-content;
-            max-width: 1108px;
-            margin: 20px auto;
-            padding: 25px 24px;">
-              <a style="text-decoration:none;">
-                <div class="button">View More</div>
-              </a>
-            </div>
+                <div class = "BottomNav">
+                <h4>Sitemap</h4>
+                <a href="/newfoundproducts">Home</a><br/>
+                <a href="/newfoundproducts/about.html">About</a><br/>
+                <a href="/newfoundproducts/contact.html">Contact</a><br/>
+                <a href="/newfoundproducts/products.html">Products and Brands</a><br/>
+                </div>
+              </div>
+          </div>
         </section>
-
         
     </body>
 </html>

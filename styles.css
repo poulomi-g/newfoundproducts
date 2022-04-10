@@ -26,6 +26,17 @@ h3 {
     color: #0d1f51;
 }
 
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+p {
+    color: #0d1f51;
+}
+
 .desktopnavContainer a {
     padding-left: 32px;
     text-decoration: none;
@@ -80,6 +91,8 @@ h3 {
 
 .desktopnavContainer {
     overflow: hidden;
+    z-index: 5;
+    position: relative;
 }
 
 .desktopNav {
@@ -95,12 +108,14 @@ h3 {
     margin: 0 auto;
 }
 
+
 .fullwidthNav {
     background-color: rgb(13, 31, 81);
     padding: 30px 0px;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 4;
 }
 
 @media screen and (max-width: 700px) {
@@ -112,6 +127,10 @@ h3 {
 
     .desktopNav {
         display: none;
+    }
+
+    .desktopnavContainer {
+        z-index: 5;
     }
 }
 
@@ -140,12 +159,12 @@ h3 {
 
 .HeroText > h1 {
     color: #fff;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .HeroText > h3 {
     color: #fff;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 650px) {
@@ -353,4 +372,72 @@ p2 {
 .SectionHeader {
   text-align: center;
   margin-top:40px;
+}
+
+.footer {
+  background-color: #0d1f51;
+}
+
+.LogoAddress {
+  flex:1;
+  color: #fff;
+}
+
+.BottomNav {
+  flex:1;
+  color: #fff;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.footerContainer {
+    max-width: 1168px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 32px;
+}
+
+.LogoAddress h2 {
+    color: #fff;
+}
+
+.LogoAddress p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.BottomNav h4 {
+    text-align: right;
+    font-weight: 800;
+}
+
+.BottomNav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2;
+        font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+    .footerContainer{
+        display: block;
+    }
+
+    .BottomNav {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .BottomNav > a {
+        text-align: left;
+        padding-left: 2%;
+    }
+    .BottomNav > h4 {
+        text-align: left;
+    }
+}
+
+a.active {
+    color:#fff;
 }
