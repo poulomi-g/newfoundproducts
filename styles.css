@@ -569,7 +569,7 @@ a.active {
     margin: 0;
     font-size: 1.3em;
     font-weight: 500;
-    color: darkgray;
+    color: #0d1f51;
   }
 
   .unsetAlphabet {
@@ -600,3 +600,4 @@ a.active {
     transition: 0.3s;
     
 }
+

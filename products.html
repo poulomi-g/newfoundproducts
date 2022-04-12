@@ -72,7 +72,7 @@
             </div>
         </a>
             <div class="AlphabetNav">
-                <a href="#num">0-9</a>
+                <a href="#num">#</a>
                 <a href="#A">A</a>
                 <a href="#B">B</a>
                 <a href="#C">C</a>
@@ -540,7 +540,7 @@
                   
                         
                   
-                        if (($nameArr[0].split('')[0].toLowerCase() !== $navItem.text().toLowerCase()) && ($navItem.text().toLowerCase() != '0-9')) {
+                        if (($nameArr[0].split('')[0].toLowerCase() !== $navItem.text().toLowerCase()) && ($navItem.text().toLowerCase() != '#')) {
                           $contact.hide();
                         }
                         else if (($navItem.text().toLowerCase() == '0-9') && ("abcdefghijklmnopqrstuvwxyz".includes($nameArr[0].split('')[0].toLowerCase()))){
