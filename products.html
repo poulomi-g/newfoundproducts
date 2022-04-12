@@ -543,7 +543,7 @@
                         if (($nameArr[0].split('')[0].toLowerCase() !== $navItem.text().toLowerCase()) && ($navItem.text().toLowerCase() != '#')) {
                           $contact.hide();
                         }
-                        else if (($navItem.text().toLowerCase() == '0-9') && ("abcdefghijklmnopqrstuvwxyz".includes($nameArr[0].split('')[0].toLowerCase()))){
+                        else if (($navItem.text().toLowerCase() == '#') && ("abcdefghijklmnopqrstuvwxyz".includes($nameArr[0].split('')[0].toLowerCase()))){
                             $contact.hide();
                         }
                       }); 
