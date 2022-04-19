@@ -507,7 +507,7 @@ a.active {
     padding: .5rem;
     background: ghostwhite;
     border-radius: 4px;
-    overflow: scroll;
+    
   }
 
   .CategoryNav {
@@ -523,7 +523,7 @@ a.active {
     padding: .5rem;
     background: ghostwhite;
     border-radius: 4px;
-    overflow: scroll;
+   
   
 }
 
@@ -536,6 +536,7 @@ color: white;
     .AlphabetNav {
         justify-content: unset;
     flex-flow: unset;
+    overflow: scroll;
     }
     
 
