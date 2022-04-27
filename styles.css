@@ -97,6 +97,7 @@ p {
 
 .desktopNav {
     float: right;
+    padding-top:23px;
 }
 
 .burger {
@@ -122,7 +123,7 @@ p {
     .burger {
         display: block;
         float: right;
-        margin: 0 20px;
+        margin: 20px 20px;
     }
 
     .desktopNav {
@@ -145,16 +146,16 @@ p {
 
 .HeroSection {
     margin-top: 84px;
-    background-image: url("assets/herosection.webp");
+    background-image:linear-gradient( rgba(0, 3, 83, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/herosection.webp");
     background-size: cover;
-    height: 700px;
+    height: fit-content;
 }
 
 .HeroText {
     display: block;
     max-width: 1108px;
     margin: 0px auto;
-    padding: 84px 24px;
+    padding: 44px 24px;
 }
 
 .HeroText > h1 {
@@ -173,9 +174,13 @@ p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .HeroText {
-        padding-top: 40px;
+        padding-top: 10px;
+        margin-top: 0px;
+    }
+    .HeroText h3 {
+        font-size: 30px;
     }
 }
 
@@ -665,70 +670,68 @@ color: white;
     
 }
 
-.container {
-    width:90%;
-    margin:0 auto;
-  }
-  input[type="radio"] {
-      display:none;
-  }
-  label {
-    width:23%;
-    float:left;
-    text-align:center;
-    background:#ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    color:#222222;
-    padding:0.5%;
-    margin:0.5%;
-    margin-bottom:30px;
-    cursor:pointer;
-  }
-  input[type="radio"][id="blue"]:checked + label {
-    background:#6666ff;
-  }
-  input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-  }
-  input[type="radio"][id="red"]:checked + label {
-    background:#ff4466;
-  }
-  input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-  }
-  input[type="radio"][id="green"]:checked + label {
-    background:#66dd99;
-  }
-  input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-  }
-  
-  .tile {
-    width:23%;
-    height:100px;
-    float:left;
-    transition:all 0.3s;
-    margin:0.5%;
-    padding:0.5%;
-  }
-  .green {
-    background:#66dd99;
-  }
-  .blue {
-    background:#6666ff;
-  }
-  .red {
-    background:#ff4466;
-  }
+.heroabout {
+    height:fit-content;
+    border-radius: unset;
+    background-color: transparent;
+    box-shadow: unset;
+}
+
+/* .slick-dots li button {
+    background: url(assets/icons8-circle-24.png);
+    text-indent: -9999px;
+    overflow:hidden;
+    
+    border:unset;
+    width: 25px;
+    list-style-type: none;
+} 
+
+*/
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 102px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .45;
+    color: rgb(255, 255, 255);
+}
+
+.slick-dots {
+    margin:10px auto;
+    width: fit-content;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+   }
