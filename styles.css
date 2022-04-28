@@ -735,3 +735,23 @@ color: white;
 .slick-dots li.slick-active button:before {
     opacity: 1;
    }
+
+#mobilehero {
+    display: none;
+}
+
+#mobilehero .HeroText {
+    max-width: unset;
+    
+}
+@media screen and (max-width: 535px) {
+    .slider-wrapper{
+        display: none;
+    }
+
+    #mobilehero {
+        display: block;
+        margin-top: 125px;
+    }
+
+}

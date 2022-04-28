@@ -51,6 +51,15 @@
 
     <!-- Hero Section -->
     <section class="HeroSection">
+        <div class="heroabout" id = "mobilehero">
+            <div class="HeroText">
+                <h1>Newfound Product</h1>
+                <h3>Canada's number one source for brand name products</h3>
+                <a style="text-decoration:none;" href="/products.html">
+                    <div class="button">Learn More</div>
+                </a>
+            </div>
+        </div>
         <div class="slider-wrapper" style="max-width:unset">
             <div class="slider">
                 <div class="col-md-12 heroSlider-fixed">
@@ -90,9 +99,7 @@
                                 <div class="HeroText">
                                     <h1>Newfound Product</h1>
                                     <h3 style="max-width: 1000px;">
-                                        We are proud to have supplied millions of delivered items each year, our team strives to do the very best to ensure our customers business is thriving by keeping our warehouses stocked with the brands you know and love at the best possible prices. 
-                                        
-                                        We work with some of the large retail along with independent businesses.</h3>
+                                        We are proud to have supplied millions of delivered items each year, our team strives to do the very best to ensure our customers business is thriving by keeping our warehouses stocked with the brands you know and love at the best possible prices. </h3>
                                 </div>
                             </div>
 
@@ -111,9 +118,10 @@
         <script>
 
             $('.home-hero-slider').slick({
+                centerMode: false,
                 slidesToShow: 1,
                 dots:true,
-                infinite: true,
+                
                 draggable: true,
                 autoplay: true,
                 arrows: false,
