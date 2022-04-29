@@ -745,8 +745,12 @@ color: white;
     
 }
 @media screen and (max-width: 535px) {
-    .slider-wrapper{
+    #slider-wrapper-fixed{
         display: none;
+    }
+
+    #h1hero {
+        font-size: 55px;
     }
 
     #mobilehero {
